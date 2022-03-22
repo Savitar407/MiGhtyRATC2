@@ -1,6 +1,8 @@
 # MiGhtyRATC2
 WARNING DO NOT USE FOR ILLEGAL PURPOSES, RESEARCH ONLY, I TAKE NO RESPONSIBILITY FOR ANYTHING DONE WITH THIS TOOL
 
+NOTE - currently working on client multithreading to push commands out to multiple test vm's at once. 
+
 MiGhtyRATC2 is a rudementary custom C2 protocol and a client / server model to test antivirus / EDR by obfuscating a "beacon" written in powershell and 
 obfuscated with Chimera, Chimera is a great obfuscator so go checkout their github here: https://github.com/tokyoneon/Chimera
 
