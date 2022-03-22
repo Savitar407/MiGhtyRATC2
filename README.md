@@ -23,8 +23,8 @@ MiGhtyRATC2>
 
 if you see the above that means your beacon has successufully made its connection with your C2 server to test antivirus behavioral analysis. 
 
-You can test if av will catch a reverse shell by starting a listener by typing "nc -nlvp 4444" into your kali linux terminal and typing "shell" into the 
-MiGhtyRATC2 terminal, MiGhtyRATC2 will send its C2 command down the socket to the beacon telling it to establish a reverse shell on the test vm. 
+You can test if av will catch a reverse shell by starting a listener by typing "nc -nlvp <port specified in PAYLOAD lhost>" into your kali linux terminal and typing "shell" into the MiGhtyRATC2 terminal, MiGhtyRATC2 will send its C2 command down the socket to the beacon telling it to establish a reverse shell 
+  on the test vm. 
 
 You can test if antivirus will catch downloads by entering "install:persistence" which will initiate apache2 web server and send the command down to the 
 beacon to download Final_Beacon.ps1 and persistenceB.bat from the C2 server. Theese files will be saved to C:\Users\Public and a registry run key is set 
