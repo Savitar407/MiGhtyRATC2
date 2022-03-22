@@ -23,6 +23,8 @@ MiGhtyRATC2>
 
 if you see the above that means your beacon has successufully made its connection with your C2 server to test antivirus behavioral analysis. 
 
+type "help" for info on the current commands MiGhtyRATC2 supports, 
+
 You can test if av will catch a reverse shell by starting a listener by typing "nc -nlvp <port specified in PAYLOAD lhost>" into your kali linux terminal and typing "shell" into the MiGhtyRATC2 terminal, MiGhtyRATC2 will send its C2 command down the socket to the beacon telling it to establish a reverse shell 
   on the test vm. 
 
@@ -35,7 +37,12 @@ except it will download a keylogger and its associated persistent batch file and
 
 If you want to test other files you can use the command "install:<filename>" and if the specified file is in /var/www/html the beacon will download it
 to C:\Users\public on your test vm.
+
+command:<cmd / powershell command> will send the command down the socket to the beacon, have the beacon execute it, and send it back up the socket to the C2 server.
+  NOTE - this command currently has poor formatting, currently working on a fix, for now just use "shell" if you want to run a command on the test vm
   
 THIS IS TO BE USED FOR RESEARCH PURPOSES ONLY, I TAKE NO RESPOLSIBILITY FOR ILLEGAL ACTIONS PERFORMED WITH THIS TOOL, I only create theese types of tools
   for learning about cyber security.
+  
+
 
